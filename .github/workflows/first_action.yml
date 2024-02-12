@@ -21,6 +21,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Apt Update
+        run: sudo apt update
+        
       - name: installing Nodejs
         run: sudo apt install node
         shell: bash
