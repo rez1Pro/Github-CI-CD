@@ -24,4 +24,7 @@ jobs:
         run: sudo apt-get update
 
       - name: installing Nodejs
-        run: sudo apt install node
+        run: sudo apt-get install node
+
+      - name: Checking node version
+        run: node -v
