@@ -1,0 +1,11 @@
+name: First Action
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["dev","main"]
+
+jobs:
+  first_runner:
+    runs-on: ubuntu-latest
