@@ -1,4 +1,4 @@
-name: First Action
+name: "First-action"
 
 on:
   push:
@@ -7,5 +7,11 @@ on:
     branches: ["dev","main"]
 
 jobs:
-  first_runner:
+  First-runner:
     runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/chekcout@v2
+      - name: Testing something
+        run: echo "Hello developer"
+        shell: bash
