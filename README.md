@@ -1,2 +1,2 @@
 # Github-CI-CD
-Practicing Github CI/CD tool
+Practicing Github CI/CD tools
