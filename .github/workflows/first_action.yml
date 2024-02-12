@@ -17,6 +17,9 @@ jobs:
         shell: bash
   
   2nd-runner:
+    runs-on: ubuntu-latest
+
+    steps:
       - uses: actions/checkout@v2
       - name: installing Nodejs
         run: sudo apt install node
