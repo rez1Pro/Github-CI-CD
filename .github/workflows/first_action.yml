@@ -19,4 +19,5 @@ jobs:
   2nd-runner:
       - uses: actions/checkout@v3
       - name: installing Nodejs
-        run: sudo install node
+        run: sudo apt install node
+        shell: bash
