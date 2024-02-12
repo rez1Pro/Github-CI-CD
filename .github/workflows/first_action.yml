@@ -7,11 +7,16 @@ on:
     branches: ["dev","main"]
 
 jobs:
-  First-runner:
+  1st-runner:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - name: Testing something
+      - name: Printing Something
         run: echo "Hello developer"
         shell: bash
+  
+  2nd-runner:
+      - uses: actions/checkout@v3
+      - name: installing Nodejs
+        run: sudo install node
