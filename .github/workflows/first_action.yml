@@ -23,8 +23,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Apt Update
         run: apt update
+        shell: bash
+
       - name: Installing Sudo
         run: apt install sudo
+        
       - name: installing Nodejs
         run: sudo apt install node
         shell: bash
