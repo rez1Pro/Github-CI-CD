@@ -23,8 +23,9 @@ jobs:
       - name: Apt Update
         run: sudo apt-get update
 
-      - name: installing Nodejs
-        run: sudo apt-get install node
-
-      - name: Checking node version
-        run: node -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm test
+      - run: npm -v
