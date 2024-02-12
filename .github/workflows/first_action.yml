@@ -7,7 +7,7 @@ on:
     branches: ["dev","main"]
 
 jobs:
-  1st-runner:
+  First-runner:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
         run: echo "Hello developer"
         shell: bash
   
-  2nd-runner:
+  Second-runner:
     runs-on: ubuntu-latest
 
     steps:
